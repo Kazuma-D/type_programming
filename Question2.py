@@ -19,8 +19,8 @@ def serch_index(sorted_array, target_number):
     time = int(math.ceil(math.log2(len(sorted_array))))  #計算回数をlog2nの小数点以下切り上げにより決定
 
     for n in range(1, time + 1):                         #time回探索を行う
-        center = (small + big) // 2
-
+        
+        center = (small + big) // 2                      #配列中間の値を決定
         #print(center)
 
         if sorted_array[center] == target_number:
